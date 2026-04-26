@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .booking-container { max-width: 900px; margin: auto; border: 2px solid #3498db; padding: 20px; background: white; position: relative; }
+        .title { text-align: center; color: #2ecc71; font-weight: bold; font-size: 24px; }
+        .instruction { text-align: center; font-size: 14px; margin-bottom: 20px; }
+        .flex-container { display: flex; justify-content: space-between; flex-wrap: wrap; }
+        
+        /* Motor Cards */
+        .motor-list { width: 55%; }
+        .card { display: flex; border: 2px solid #000; margin-bottom: 10px; padding: 10px; align-items: center; }
+        .green { border-color: #27ae60; } .red { border-color: #e74c3c; } .blue { border-color: #3498db; }
+        .card img { width: 100px; margin-right: 15px; }
+        
+        /* Form Styling */
+        .form-side { width: 40%; }
+        .field { display: flex; border: 1px solid #3498db; margin-bottom: 5px; }
+        .field label { background: #fff; padding: 5px; width: 100px; border-right: 1px solid #3498db; }
+        .field input { border: none; outline: none; padding: 5px; flex: 1; }
+        
+        .btn-wa { background: #27ae60; color: white; width: 100%; padding: 10px; border: none; font-weight: bold; cursor: pointer; }
+        .note { font-size: 12px; margin-top: 20px; text-align: center; }
+        .highlight-blue { color: #2980b9; font-weight: bold; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="booking-container">
+    <div class="title">GOJEX CAMERON MOTORBIKE RENTAL</div>
+    <p class="instruction">Selamat datang ke Syarikat <span style="text-decoration: underline;">Gojex</span> Cameron Motor Rental!!!<br>
+    Anda <span class="highlight-blue">boleh motorsikal kegemaran anda untuk disewa</span>. Sila <span class="highlight-blue">hubungi nombor telefon</span><br>
+    yang <span class="highlight-blue">tertera untuk urusan Tempahan motorsikal</span> dan Tarikh <span style="text-decoration: underline;">sewaan</span>.</p>
+
+    <div class="flex-container">
+        <div class="motor-list">
+            <div class="card green">
+                <img src="images/avantiz.jpg" alt="Avantiz">
+                <div>
+                    <strong>YAMAHA AVANTIZ 125CC</strong><br>
+                    <input type="checkbox"> 12 JAM – RM 50<br>
+                    <input type="checkbox"> 24 JAM – RM 70
+                </div>
+            </div>
+            <div class="card red">
+                <img src="motor2.png" alt="NVX">
+                <div>
+                    <strong>YAMAHA NVX 155CC</strong><br>
+                    <input type="checkbox"> 12 JAM – RM 90<br>
+                    <input type="checkbox"> 24 JAM – RM 120
+                </div>
+            </div>
+            <div class="card blue">
+                <img src="motor3.png" alt="NMAX">
+                <div>
+                    <strong>YAMAHA NMAX 155CC</strong><br>
+                    <input type="checkbox"> 12 JAM – RM 90<br>
+                    <input type="checkbox"> 24 JAM – RM 120
+                </div>
+            </div>
+        </div>
+
+        <div class="form-side">
+            <h4 style="text-decoration: underline;">Tempah Sekarang :</h4>
+            <div class="field"><label>Nama</label> : <input type="text"></div>
+            <div class="field"><label>Bil. Motor</label> : <input type="text"></div>
+            <div class="field"><label>Tarikh</label> : <input type="text"></div>
+            <div class="field"><label>Jam mula</label> : <input type="text"></div>
+            <div class="field"><label>Jam tamat</label> : <input type="text"></div>
+            <div class="field"><label>Jumlah jam</label> : <input type="text"></div>
+            <div class="field"><label>Bil. helmet</label> : <input type="text"></div>
+            <div class="field"><label>Lokasi</label> : <input type="text"></div>
+            <button class="btn-wa">Booking WhatsApp</button>
+        </div>
+    </div>
+
+    <p class="note">
+        Note : <span class="highlight-blue">untuk sebarang pertanyaan atau ingin berurusan</span> di <span class="highlight-blue">luar aplikasi boleh hubungi langsung nombor kontak</span> : <span style="color: blue;">010-846123</span> – En. NIK
+    </p>
+</div>
+<a href="index.html">⬅ Kembali ke Utama</a>
+</body>
+</html>
